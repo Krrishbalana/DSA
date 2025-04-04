@@ -1,6 +1,12 @@
 #include<iostream>
 using namespace std;
+
+//defination of a function
+void printHello(){
+    cout << "Hello\n";
+}
 int main(){
-    cout << "get ready to learn Functions";
+    // call function / invoke funcion
+    printHello();
     return 0;
 }
