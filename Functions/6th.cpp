@@ -4,11 +4,15 @@ using namespace std;
 
 //define functions
 int sum(int a, int b){
-    return a+b;
+    a = a+10;      // it will not affect a in the main function because this a is copy of a(present in main function)
+    b = b+10;
+    return a+b;    // it will not affect b in the main function because this a is copy of b(present in main function)
 }
 
 int main(){
-    int x=5, y=10;
+    int a=5, b=10; // copy of arguments which is passed to the functions
     // calling function
-    cout << sum(x,y) << endl;  // pass by value
+    cout << sum(a , b) << endl;  // pass by value
+
+    cout << a << endl << b << endl; // these a and b will remain same because they are stored in main function 
 }
