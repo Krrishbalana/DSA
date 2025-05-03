@@ -1,3 +1,4 @@
+// linear search in array
 #include<iostream>
 using namespace std;
 //function for linear search
